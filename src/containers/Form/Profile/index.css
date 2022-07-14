@@ -1,0 +1,91 @@
+.profile-main {
+    height: 100%;
+    background-color: rgb(250,250,250);
+
+
+}
+.profile-container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(219,219,219);   
+    padding-bottom: 44px;
+}
+.profile-img {
+    flex-basis: 0px;
+    flex-grow: 0.45;
+    margin-right: 30px;
+}
+.profile-img img {
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 60px;
+}
+.profile-name__title {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-direction: row;
+    flex-shrink: 1;
+    min-width: 0;
+}
+.profile-flow {
+    display: flex;
+    margin-bottom: 20px;
+}
+.name__title {
+    color: rgb(38,38,38);
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+    margin: -5px 0 -6px;
+}
+.inter {
+    color: rgb(38,38,38);
+}
+.inter span {
+    font-weight: 600;
+}
+.followers {
+    margin: 0 30px;
+}
+.profile_name__user {
+    font-weight: 600;
+}
+.changle__title {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.listitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8e8e8e;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    height: 52px;
+}
+.item-tab {
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.active {
+    font-weight: 600;
+    color: #333;
+    border-top: 1px solid #333;
+} 
+.posts {
+    margin-bottom: 0;
+}

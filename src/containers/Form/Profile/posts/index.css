@@ -1,0 +1,16 @@
+.posts {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 950px;
+    flex: 1 0 0%;
+}
+.post-item {
+    height: 317px;
+    width: calc(33.333% - 28px);
+    object-fit: cover;
+    margin: 0 28px 28px 0;
+    cursor: pointer;
+}

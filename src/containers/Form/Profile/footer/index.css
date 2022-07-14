@@ -1,0 +1,32 @@
+.footer-container {
+    height: 120px;
+}
+.footer-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.footer-item {
+    color: rgb(142,142,142);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 15px;
+}
+.footer-languge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: rgb(142,142,142);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+.languge {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
