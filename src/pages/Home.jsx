@@ -1,8 +1,11 @@
 import React from 'react'
+import PageHome from '../containers/Form/Home'
 
 const Home = () => {
     return (
-        <div>Home</div>
+        <>
+            <PageHome />
+        </>
     )
 }
 

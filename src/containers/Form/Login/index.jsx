@@ -25,7 +25,6 @@ const SIGN_IN = gql`
             }
         }
     }
-} 
 `;
 export const FormLogin = () => {
 

@@ -1,0 +1,41 @@
+.img {
+    height: 66px;
+    width: 66px;
+    display: block;
+    background-image: url('./img/pink.jpg');
+    border-radius: 50%;
+    background-size: cover;
+    position: relative;
+}
+.img::after {
+    position: absolute;
+    content: '';
+    height: 68px;
+    width: 68px;
+    border: 1px solid red;
+    border-radius: 50%;
+    top: -2px;
+    left: -2px;
+}
+.str-container {
+    padding-top: 100px;
+    width: 100%;
+
+}
+.stories {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px 20px 20px;
+    background-color: rgb(255,255,255);
+    border-radius: 8px;
+}
+.stories-name {
+    font-size: 11px;
+    letter-spacing: .01em;
+    align-items: center;
+    padding-left: 5px;
+
+}
+.storie {
+    margin-left: 20px;
+}
