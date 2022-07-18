@@ -1,36 +1,20 @@
+
+import ProfileIcon from '../ProfileIcon'
 import './index.css'
+import users from '../data/users'
 
 function Stories() {
-    const data = [
-    {
-        id: 1,
-        name: 'pinky.store',
-        img: "./img/htmcss.jpg"
-    },
-    {
-        id: 2,
-        name: 'ielts_izone',
-        img: "./img/htmcss.jpg"
-    },
-    {
-        id: 3,
-        name: 'hml_css_js',
-        img: "./img/htmcss.jpg"
-    },
-]
+    let accountName = users[Math.floor(Math.random() * users.length)].username;
+
+    if (accountName.length > 10) {
+        accountName = accountName.substring(0, 10) + "...";
+    }
     return (
-        <div className='str-container'>
-            <div className="stories">
-                {data.map((item,index) => (
-                    <div className="storie" key={index}>
-                        <div className="img"></div>
-                        <div className="stories-name">
-                            {item.name}
-                        </div>
-                    </div>
-                ))}
+            <div className="wrap-story">
+                    <ProfileIcon iconSize='big' storyBorder={true} />
+                    <span className="stories-name">{accountName}</span>
             </div>
-        </div>
+        
     )
 }
 

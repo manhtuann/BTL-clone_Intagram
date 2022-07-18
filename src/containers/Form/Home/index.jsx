@@ -1,18 +1,28 @@
 import React from 'react'
 import Navbar from '../Navbar/index'
-import Stories from './Stories'
 import './home.css'
 import NewFeed from './Newfeed'
+import Story from './Stories/Story'
 
 
 function PageHome() {
+    const data = [
+        {
+            likedByText: 'pinky.store.dn'
+        },
+        {
+            likedByText: ' arun___pradeep'
+        }
+    ]
     return (
         <>
             <Navbar />
             <div className='home-container'>
                 <div className="home-left">
-                    <Stories />
-                    <NewFeed />
+                    <Story />
+                    <NewFeed 
+                        likedByText={data.map=(item) =>(item.likedByText)}
+                    />
                     <NewFeed />
                     <NewFeed />
 

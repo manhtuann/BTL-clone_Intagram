@@ -12,7 +12,6 @@
 .users {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 10px;
 }
 .user {
@@ -27,9 +26,27 @@
     font-weight: 600;
 }
 
-.user img {
-    height: 40px;
-    width: 40px;
+.user .profileIcon {
+    /* height: 40px;
+    width: 40px; */
+    object-fit: cover;
+    border-radius: 50%;
+}
+.small {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.medium {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.big {
+    height: 60px;
+    width: 60px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -57,6 +74,8 @@
     font-weight: 400;
     line-height: 18px;
     margin-bottom: 8px;
+    display: flex;
+    align-items: center;
 }
 .time {
     color: rgb(142,142, 142);
@@ -75,6 +94,9 @@
     padding: 0;
     position: relative;
     vertical-align: baseline;
+    margin: 10px 0;
+    padding-top: 10px;
+    border-top:1px solid #ccc;
 }
 input {
     background: none;
@@ -98,4 +120,15 @@ button {
     display: inline-block;
     padding: 0;
     position: relative;
+}
+.textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.more-nf {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }

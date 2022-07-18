@@ -21,6 +21,7 @@
     padding-top: 100px;
     width: 100%;
 
+
 }
 .stories {
     display: flex;
@@ -28,6 +29,7 @@
     padding: 20px 50px 20px 20px;
     background-color: rgb(255,255,255);
     border-radius: 8px;
+    border: 1px solid #ccc;
 }
 .stories-name {
     font-size: 11px;
@@ -38,4 +40,7 @@
 }
 .storie {
     margin-left: 20px;
+}
+.wrap-story {
+    margin-left: 10px;
 }
