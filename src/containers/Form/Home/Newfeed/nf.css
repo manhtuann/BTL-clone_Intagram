@@ -27,10 +27,15 @@
 }
 
 .user .profileIcon {
-    /* height: 40px;
-    width: 40px; */
     object-fit: cover;
     border-radius: 50%;
+    border: 2px solid rgb(255 91 28);
+    padding: 2px;
+    cursor: pointer;
+}
+.full {
+    width: 100%;
+    object-fit: cover;
 }
 .small {
     width: 25px;
@@ -98,7 +103,7 @@
     padding-top: 10px;
     border-top:1px solid #ccc;
 }
-input {
+.input {
     background: none;
     border: none;
     color: rgb(38,38,38);

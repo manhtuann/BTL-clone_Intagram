@@ -49,8 +49,8 @@ export const FormRegister = () => {
 
     return (
         <div className="wrap">
-            <div id='login-container'>
-                <form className='login-form'>
+            <div id='register-container'>
+                <form className='register-form'>
                     <h2>Register</h2>
 
                     <Input

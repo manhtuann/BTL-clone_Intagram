@@ -11,7 +11,7 @@ function Stories() {
     }
     return (
             <div className="wrap-story">
-                    <ProfileIcon iconSize='big' storyBorder={true} />
+                    <ProfileIcon iconSize='big' storyBorder={true}/>
                     <span className="stories-name">{accountName}</span>
             </div>
         

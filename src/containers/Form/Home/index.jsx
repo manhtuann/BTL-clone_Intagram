@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar/index'
 import './home.css'
 import NewFeed from './Newfeed'
+import ProfileIcon from './ProfileIcon'
 import Story from './Stories/Story'
 
 
@@ -20,11 +21,9 @@ function PageHome() {
             <div className='home-container'>
                 <div className="home-left">
                     <Story />
-                    <NewFeed 
-                        likedByText={data.map=(item) =>(item.likedByText)}
-                    />
-                    <NewFeed />
-                    <NewFeed />
+                    <NewFeed likedByText='manhtuann' hours ='1'/>
+                    <NewFeed likedByText='manhtuann' hours ='1'/>
+                    <NewFeed likedByText='manhtuann' hours ='1'/>
 
                 </div>
                 <div className="home-right">
@@ -42,7 +41,7 @@ function PageHome() {
                             <div className='all'>See All</div>
                         </div>
                         <div className="right-users">
-                            <img src="https://images.unsplash.com/photo-1657982330097-8288775d0eba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+                            <ProfileIcon />
                             <div className="right-name">
                                 <span>p.m.t.10.03</span>
                                 <div>Mạnh Tuấn</div>
