@@ -10,7 +10,6 @@ function Story() {
                 <Stories />
                 <Stories />
                 <Stories />
-                <Stories />
             </div>
         </div>
             

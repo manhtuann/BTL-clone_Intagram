@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Button } from '../../../components/Button/button';
 import './css/login.css';
+import { ROUTE } from '../../../constants';
+import { useNavigate,Link } from 'react-router-dom';
+
 import { gql , useMutation } from '@apollo/client';
 
 
@@ -27,39 +30,44 @@ const SIGN_IN = gql`
     }
 `;
 export const FormLogin = () => {
+    const navigate = useNavigate()
+    const [checkPassword, setCheckPassword] = useState(false)
+    const [checkEmail, setCheckEmail] = useState(false)
+    
+        const [data, setData] = useState({
+            email: {
+                value: ""
+
+            },
+            password: {
+                value: ""
+
+            },
+        });
+
 
     const [handleLogin] = useMutation(SIGN_IN,{
-        onCompleted(data) {
-            console.log(data);
+        onCompleted() {
+            navigate(ROUTE.HOME)
         },
         onError(err){
             console.log(err);
         }
     });
 
-    const [data, setData] = useState({
-        email: {
-            value: '',
-            isError: false,
-            msg: '',
-        },
-        password: {
-            value: '',
-            isError: false,
-            msg: '',
-        },
-    });
-
-    const [checkPassword, setCheckPassword] = useState(false)
-    const [checkEmail, setCheckEmail] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
         console.log(data);
 
         handleLogin({
             variables: {
-                data: data
+                data: 
+                {
+                    email:data.email.value,
+                    password:data.password.value
+                }
             }
         })
 
@@ -118,7 +126,7 @@ export const FormLogin = () => {
 
                     <Button text='Sign In' handleClick={handleSubmit} />
 
-                    <div className='goto-create'>Not registered? <a href="">Create an account</a></div>
+                    <div className='goto-create'>Not registered? <Link to={ROUTE.REGISTER}>Create an account</Link></div>
                 </form>
             </div>
         </div>

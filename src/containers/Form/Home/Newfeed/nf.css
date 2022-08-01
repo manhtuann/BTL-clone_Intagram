@@ -5,8 +5,7 @@
     background-color: rgb(255,255,255);
     width: 100%;
     margin-top: 20px;
-    border:1px solid #ccc;
-    border-radius: 8px;
+
 
 }
 .users {
@@ -137,3 +136,8 @@ button {
     align-items: center;
     justify-content: flex-end;
 }
+.wrappp {
+    border:1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+} 

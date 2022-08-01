@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import '../Home/Newfeed/nf.css'
 function ProfileIcon(props) {
     const { iconSize, storyBorder, image } = props;
