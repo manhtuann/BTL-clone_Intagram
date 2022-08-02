@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     padding: 10px;
+    cursor: pointer;
 }
 .user {
     display: flex;
@@ -141,3 +142,14 @@ button {
     border-radius: 8px;
     margin-bottom: 10px;
 } 
+.name-cmt {
+    color: rgb(38,38,38);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+}
+.name-title {
+    color: rgb(38,38,38);
+    font-weight: 500;
+    line-height: 18px;
+}

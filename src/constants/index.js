@@ -3,5 +3,6 @@ export const ROUTE = {
     LOGIN: '/login',
     REGISTER: '/register',
     HOME: '/home',
-    PROFILE: '/profile'
+    PROFILE: '/profile',
+    Message: '/chat'
 };

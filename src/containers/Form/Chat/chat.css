@@ -1,0 +1,90 @@
+.mess {
+    padding-top: 80px;
+    height: 100vh;
+    width: 100%;
+    max-width: 939px;
+    margin: 0 auto;
+}
+.mess-wrap {
+    border: 1px solid #ccc;
+    display: flex;
+    height: calc(100vh - 100px);
+    width: 100%;
+    border-radius: 5px;
+}
+.mess-left {
+    width: 40%;
+    border-right: 1px solid #ccc;
+
+}
+.mess-right {
+    width: 60%;
+    position: relative;
+}
+.mess-title {
+    border-bottom: 1px solid #ccc;
+}
+.mess-title h1 {
+    padding: 20px;
+    text-align: center ;
+    color: rgb(38,38,38);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.mess-name {
+    display: flex;
+    padding: 7.5px;
+
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+
+}
+.mess-icon {
+    margin-right: 10px;
+}
+.icons{
+    margin-right: 10px;
+}
+.wrap-input-chat {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    display: flex;
+    left: 25px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+    min-height: 44px;
+}
+.chat-input {
+    width: 100%;
+    border-radius: 22px;
+    padding-left: 10px;
+    border: none;
+    color: rgb(38,38,38);
+}
+.btn-submit {
+    background-color: transparent;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.caption {
+    display: block;
+    margin-left: 20px;
+    color: rgb(142,142,142);
+    font-size: 14px;
+    line-height: 18px;
+    position: relative;
+}
+.caption::after{
+    content: '';
+    position: absolute;
+    height: 16.5px;
+    width: 16.5px;
+    border-radius: 50%;
+    border: 3.5px solid rgb(255,255,255);
+    top: 7px;
+    left: -38px;
+    background-color: #78de45;
+}

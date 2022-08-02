@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import { ROUTE } from './constants';
 import Profile from './pages/Profile';
 
+import Chats from './pages/Chat';
+
 const cache = new InMemoryCache({
   typePolicies: {
     Query: {
@@ -38,6 +40,7 @@ function App() {
         <Route path={ROUTE.REGISTER} element={<Register />} />
         <Route path={ROUTE.HOME} element={<Home />} />
         <Route path={ROUTE.PROFILE} element={<Profile />} />
+        <Route path={ROUTE.Message} element={<Chats />} />
       </Routes>
     </BrowserRouter>
     </ApolloProvider>

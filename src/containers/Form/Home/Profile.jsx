@@ -7,8 +7,8 @@ function Profile(props) {
         username,
         caption,
         iconSize,
-        captionSize,
         storyBorder,
+        chatName,
         hideAccountName,
         image,
     } = props;
@@ -27,8 +27,8 @@ function Profile(props) {
             {(accountName || caption) && !hideAccountName && (
                 <div className="textContainer">
                     <div className="wrap-text">
-                    <span className="newfeed-name">{accountName}</span>
-                    <span className={`caption ${captionSize}`}>{caption}</span>
+                    <span className={`newfeed-name ${chatName}`}>{accountName}</span>
+                    <span className={caption ? 'caption' :''}>{caption}</span>
                     </div>
                 </div>
             )}
